@@ -11,12 +11,37 @@
     </div>
   <% end %>
 
+<!-- 物件登録フォーム -->
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label '物件名' %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label '賃料' %>
+    <%= form.text_field :name %>円
+  </div>
+
+  <div class="field">
+    <%= form.label '住所' %>
+    <%= form.text_field :name %>
+  </div>
+  
+  <div class="field">
+    <%= form.label '築年数' %>
+    <%= form.text_field :name %>年
+  </div>
+
+  <div class="field">
+    <%= form.label '備考' %>
     <%= form.text_area :name %>
   </div>
 
+<!-- 物件登録フォーム -->
+
+
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit '登録する' %>
   </div>
 <% end %>
